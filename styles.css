@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;300;400;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+
+:root {
+  --primary-color: coral;
+  --secondary-color: blanchedalmond;
+  --dark-gray: #333;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Martel';
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+  position: relative;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 50px;
+}
+
+nav ul li {
+  cursor: pointer;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: var(--dark-gray);
+}
+
+.grid {
+  grid-template-rows: 100px, 1fr, 400px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  /* border: 1px solid red; */
+  /* display: flex;
+  justify-content: center; */
+}
+
+.flex-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-bar {
+  height: 20px;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.logo {
+  color: var(--primary-color);
+}
+
+.carousel {
+  /* background-color: yellow; */
+  height: 600px;
+  padding: 2rem 0;
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.carousel-img {
+  height: 100%;
+  max-width: 350px;
+  object-fit: cover;
+}
+
+.hero-text {
+  background-color: lightsalmon;
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--dark-gray);
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.hero-text p {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 1rem;
+}
+
+.lets-chat {
+  padding: 5rem;
+}
+
+.lets-chat-img {
+  max-width: 450px;
+  border: solid 10px var(--primary-color);
+  margin-right: 3rem;
+}
+
+.lets-chat .text-wrapper {
+  text-align: left;
+  align-items: start;
+  margin-left: 5rem;
+}
+
+.lets-chat h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  font-weight: 900;
+  line-height: 2.5rem;
+}
+
+.lets-chat p {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.lets-chat h3 {
+  font-size: 1.3rem;
+  color: var(--dark-gray);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  letter-spacing: 3px;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  color: white;
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  align-self: center;
+  cursor: pointer;
+}
+
+.services {
+  background-color: var(--secondary-color);
+  padding: 3rem 0;
+}
+
+.services h2,
+.reviews h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--dark-gray);
+  /* background-color: var(--primary-color); */
+}
+
+.services p,
+.reviews h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark-gray);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 4rem;
+}
+
+.services-grid {
+  display: flex;
+  gap: 2rem;
+}
+
+.service-card-img {
+  height: 350px;
+  overflow: hidden;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.services-grid .btn {
+  width: 80%;
+  transform: translateY(-30px);
+}
+
+.reviews {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  height: 550px;
+  position: relative;
+}
+
+.reviews .container {
+  max-width: 60%;
+}
+
+.img-wrapper {
+  height: 100%;
+  width: 100%;
+  background-image: url(images/Anis_Adil_Summaiya-19.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cursive {
+  font-family: 'Meow Script';
+  font-size: 4rem;
+  font-weight: 100;
+  margin-right: 0.5rem;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.pagination i {
+  cursor: pointer;
+}
+
+.about {
+  height: 550px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: var(--secondary-color);
+  z-index: -2;
+}
+
+.about .container {
+  height: 100%;
+}
+
+.about-grid {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.block {
+  width: 250px;
+  height: 350px;
+  background-color: purple;
+}
+
+.img-container {
+  position: relative;
+  /* border: solid 1px red; */
+  /* height: 100%; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.img-container .block {
+  position: absolute;
+  transform: translateY(-15%);
+}
+
+.img-container .block:nth-child(1) {
+  background-image: url(images/PXL_20231021_152616875.PORTRAIT.jpg);
+  background-size: cover;
+  top: 100px;
+  left: 100px;
+}
+.img-container .block:nth-child(2) {
+  bottom: 0;
+  right: 75px;
+  height: 300px;
+  background-image: url(images/About_Me_1.jpg);
+  background-size: cover;
+}
+.img-container .block:nth-child(3) {
+  background-color: aquamarine;
+  top: 125px;
+  left: 75px;
+  z-index: -1;
+}
+
+.img-container img {
+  position: absolute;
+  width: 70%;
+  object-fit: cover;
+}
+
+.img-container img:nth-child(2) {
+  top: 200px;
+  right: 50px;
+  border: 3px solid red;
+  z-index: 2;
+}
+
+.about .text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.about h2 {
+  margin-bottom: 0.5rem;
+}
+.about p {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.about .btn {
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--primary-color);
+  height: 300px;
+}
